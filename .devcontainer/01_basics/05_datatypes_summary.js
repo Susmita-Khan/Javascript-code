@@ -15,4 +15,22 @@ const myFunction = function(){   // return type is object function
     console.log("Hello world");
 }
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
+
+//*****
+// stack (primitive) , Heap (Non-primitive)
+
+let myYoutubename = "hiteshchoudhuarydotcom" // Stack
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "hitesh@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
